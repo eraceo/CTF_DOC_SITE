@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erace</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+
+<body>
+
+    <img src="images/jsp.gif" class="overlay">
+
+    <button style="top: 85%;" onclick="retourPagePrecedente()" class="button">Retour</button>
+       
+    <button style="top: 15%; left: 20%;" onclick="afficherBulle('bulle_1')" class="bouton">Encodage - ASCII</button>
+
+    <div id="bulle_1" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_1')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            Décoder la chaîne.
+            <br>
+            <br>
+            <img src="images/ascii.png">
+            <br>
+            <br>
+            <br>
+            On vas sur dcode
+            <br>
+            <br>
+            <img src="images/dcode_ascii.png">  
+        </p>
+    </div>
+    
+    <button style="top: 15%; left: 50%;" onclick="afficherBulle('bulle_2')" class="bouton">Encodage - UU</button>
+    
+    <div id="bulle_2" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_2')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            Retrouver le mot de passe de validation.
+            <br>
+            <br>
+            <img src="images/uu.png">
+            <br>
+            <br>
+            <br>
+            On vas sur dcode
+            <br>
+            <br>
+            <img src="images/dcode_uu.png"> 
+        </p>
+    </div>
+
+    <button style="top: 15%; left: 80%;" onclick="afficherBulle('bulle_3')" class="bouton">FTP - Authentification</button>
+
+    <div id="bulle_3" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_3')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            Un échange authentifié de fichier réalisé grâce au protocole FTP. Retrouvez le mot de passe utilisé par l’utilisateur.
+            <br>
+            <br>
+            <img src="images/tcp_capture.png">
+            <br>
+            <br>
+            <br>
+            On suis le flux TCP 
+            <br>
+            <br>
+            <img src="images/tcp_suivre.png"> 
+            <br>
+            <br>
+            <br>
+            Le mdp est afficher en claire
+            <br>
+            <br>
+            <img src="images/tcp_mdp.png"> 
+        </p>
+    </div>
+
+    <button style="top: 25%; left: 20%;" onclick="afficherBulle('bulle_4')" class="bouton">HTML - boutons désactivés</button>
+
+    <div id="bulle_4" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_4')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            Ce formulaire est désactivé et ne peut pas être utilisé. À vous de trouver le moyen de l’utiliser tout de même.
+            <br>
+            <br>
+            <img src="images/html_site_closed.png">
+            <br>
+            <br>
+            <br>
+            On inspect la page
+            <br>
+            <br>
+            <img src="images/html_inspect.png">
+            <br>
+            <br>
+            <br>
+            On remplace desabled par enabled
+            <br>
+            <br>
+            <img src="images/html_enabled.png">  
+            <br>
+            <br>
+            <br>
+            On rentre quelque chose
+            <br>
+            <br>
+            <img src="images/html_test.png"> 
+            <img src="images/html_stop.png"> 
+        </p>
+    </div>
+
+    <button style="top: 25%; left: 50%;" onclick="afficherBulle('bulle_5')" class="bouton">Javascript - Obfuscation 1</button>
+
+    <div id="bulle_5" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_5')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            Yuni ! Yuni !
+            <br>
+            <br>
+            <img src="images/obfuscation_1.png">
+            <br>
+            <br>
+            <br>
+            On inspect la page
+            <br>
+            <br>
+            <img src="images/obfuscation_inspect_1.png"> 
+            <br> 
+            <img src="images/obfuscation_character.png">  
+            <br>
+            <br>
+            <br>
+            On vas sur dcode
+            <br>
+            <br>
+            <img src="images//dcode_obfuscation1.png"> 
+        </p>
+    </div>
+
+    <button style="top: 25%; left: 80%;" onclick="afficherBulle('bulle_6')" class="bouton">HTTP - User-agent</button>
+
+    <div id="bulle_6" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_6')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            <img src="images/wrong_user-agent.png">
+            <br>
+            <br>
+            <br>
+            On vas sur Burp
+            <br>
+            <br>
+            <img src="images/burp_user-agents_simple.png">
+            <br>
+            <br>
+            <br>
+            On change le User-agent
+            <br>
+            <br>
+            <img src="images/burp_user-agents_admin.png">  
+        </p>
+    </div>
+    
+    <button style="top: 35%; left: 20%;" onclick="afficherBulle('bulle_7')" class="bouton">HTTP - Headers</button>
+
+    <div id="bulle_7" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_7')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            <img src="images/header_response.png">
+            <br>
+            <br>
+            <br>
+            On vas sur Burp
+            <br>
+            <br>
+            <img src="images/header_rootme_none.png">
+            <br>
+            <br>
+            <br>
+            On change le 'none' par 'yes'
+            <br>
+            <br>
+            <img src="images/header_rootme_yes.png">   
+        </p>
+    </div>
+
+    <button style="top: 35%; left: 50%;" onclick="afficherBulle('bulle_8')" class="bouton">TCP - Retour au collège</button>
+
+    <div id="bulle_8" class="bulle">
+        <span class="fermer" onclick="fermerBulle('bulle_8')">&times;</span>
+        <p>
+            <b>Énoncé</b>
+            <br>
+            <br>
+            <br>
+            Pour commencer cette épreuve utilisant le protocole TCP, vous devez vous connecter à un programme sur une socket réseau.
+            <br>
+            Vous devez calculer la racine carrée du nombre n°1 et multiplier le résultat obtenu par le nombre n°2.
+            Vous devez ensuite arrondir à deux chiffres après la virgule le résultat obtenu.
+            Vous avez 2 secondes pour envoyer la bonne réponse à partir du moment où le programme vous envoie le calcul.
+            La réponse doit être envoyée sous la forme de int ou float
+            <br>
+            Paramètres de connexion au challenge
+            <br>
+            Hôte: challenge01.root-me.org
+            <br>
+            Protocole: TCP
+            <br>
+            Port: 52002
+            <br>
+            <br>
+            <img src="images/tcp_code.png">
+        </p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
